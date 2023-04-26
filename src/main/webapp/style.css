@@ -1,0 +1,53 @@
+button {
+    width: 250px;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #eeeeee;
+    border-radius: 0;
+    border-width: 1px;
+    border-color: black;
+}
+
+p {
+    font-weight: 1;
+    font-size: 20px;
+    font-family: Bahnschrift, serif;
+    margin: 0;
+}
+
+input {
+    font-weight: 1;
+    border-width: 1px;
+    width: 250px;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 0;
+    border-color: black;
+}
+
+table {
+    font-size: 16px;
+    font-weight: 1;
+    font-family: Bahnschrift, serif;
+    margin-bottom: 20px;
+    border: 1px solid #7e7e7e;
+    border-collapse: collapse;
+}
+
+table th {
+    padding: 5px;
+    border: 1px solid #7e7e7e;
+}
+
+table td {
+    border: 1px solid #7e7e7e;
+    padding: 5px;
+}
+
+a {
+    font-weight: 1;
+    color: black;
+    text-decoration: none;
+}

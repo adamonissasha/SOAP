@@ -1,13 +1,14 @@
-package org.example;
+package org.example.service;
 
 import jakarta.jws.WebService;
 import org.example.entity.Book;
 import org.example.entity.Genre;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-@WebService(endpointInterface = "org.example.LibraryService")
+@WebService(endpointInterface = "org.example.service.LibraryService")
 public class LibraryImplService implements LibraryService {
     private final List<Book> books;
     private long id;
@@ -44,23 +45,5 @@ public class LibraryImplService implements LibraryService {
                 .stream()
                 .filter(book -> book.getName().toLowerCase().contains(name.toLowerCase()))
                 .collect(Collectors.toList());
-    }
-
-    @Override
-    public String getBooks(List<Book> books) {
-        StringBuilder stringBuilder = new StringBuilder();
-        for (Book book : books) {
-            stringBuilder
-                    .append("Book №")
-                    .append(book.getId())
-                    .append(": ")
-                    .append(book.getName())
-                    .append(", ")
-                    .append(book.getAuthor())
-                    .append(", ")
-                    .append(book.getGenre().getPrefix())
-                    .append("<br>");
-        }
-        return stringBuilder.toString();
     }
 }

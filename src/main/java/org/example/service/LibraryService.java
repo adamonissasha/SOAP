@@ -1,4 +1,4 @@
-package org.example;
+package org.example.service;
 
 import jakarta.jws.WebService;
 import org.example.entity.Book;
@@ -10,5 +10,4 @@ public interface LibraryService {
     List<Book> getAllBooks();
     List<Book> findByAuthor(String author);
     List<Book> findByName(String name);
-    String getBooks(List<Book> books);
 }

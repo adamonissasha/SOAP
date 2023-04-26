@@ -1,8 +1,8 @@
-
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8" %>
 <html>
 <head>
-    <title>Title</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <title>Input Author</title>
 </head>
 <body>
 <form action="booksByAuthor" method="Get">
